@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    font-family: 'Epilogue', sans-serif;
+}
+
+a{
+    color: hsl(0, 0%, 8%);
+}
+
+/* Nav 
+==========================================================================*/
+
+.nav__logo{
+    margin-right: 2rem;
+}
+
+.nav__header{
+    display: flex;
+    padding: 1.8rem;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar_link{
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.arrow-icon{
+    margin-left: 0.3rem;
+}
+
+.navbar__list__item a{
+    color: var(--gray);
+    font-size: 1rem;
+    align-items: center;
+}
+
+.navbar__list__item a:hover{
+    color: var(--black);
+}
+
+img{
+    margin-right: 0.5rem;
+}
+
+.navbar__list__item__dropdown{
+    position: absolute;
+    top: 5rem;
+    background-color: white;
+    box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0,20%);
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    line-height: 2;
+    display: none;
+}
+
+.navbar__list__item__dropdown.active{
+    display: block;
+}
+
+.reg{
+    position: absolute;
+    right: 2rem;
+   
+}
+
+.login{
+    margin-right: 2rem;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+
+}
+
+.register{
+    padding: 1rem 2rem;
+    background: #eee;
+    border: 1px solid #000;
+    border-radius: 0.8rem;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+
+
+.menu__moba{
+    display: none;
+}
+
+/* Nav / End
+==========================================================================*/
+
+/* main 
+==========================================================================*/
+
+main{
+    
+    height: 100vh;
+    overflow-x: hidden;
+}
+section{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin: 0 auto;
+    
+}
+
+.content picture{
+    order: 2;
+}
+
+picture img{
+    width: 80%;
+    height: 100%;
+}
+
+
+
+.main__text{
+padding: 0 2rem;
+
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 2;
+    width: 90%;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 41%);
+}
+
+.btn__link{
+    color: var(--white);
+    background: var(--black);
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 1rem 1.6rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+    
+    transition: .5s all linear;
+    
+}
+
+.btn__link:hover{
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+
+
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 4rem 0;
+    top: 5rem;
+}
+
+
+
+
+
+/* main / End
+==========================================================================*/
+
+/* media
+==========================================================================*/
+
+@media (max-width: 930px) {
+    .navbar_link{
+        position: fixed;
+        align-items: center;
+        right: 0;
+        top: 0;
+        background-color: #fafafa;
+       
+        box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0,20%);
+        flex-direction: column;
+        padding: 10rem 0.5rem;
+        row-gap: 2.5rem;
+        display: none;
+        overflow: hidden;
+    }
+
+    .navbar__list__item__dropdown{
+        position: relative;
+        top: 0;
+
+    }
+
+    .menu__moba{
+        display: block;
+        margin-left: auto;
+        z-index: 2;
+    }
+
+    .reg{
+       display: block;  
+       
+    }
+
+    .navbar_link.active{
+        display: block;
+        height: 100vh;
+        width: 20rem;
+        line-height: 5;
+        
+        
+        
+    }
+
+    .close{
+        display: none;
+        
+    }
+
+    section{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: initial;
+        
+    }
+
+    .main__text{
+        order: 2;
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    picture img{
+        width: 100%;
+        
+    }
+
+   
+    
+    
+    
+}
+
+/* media / End
+==========================================================================*/
