@@ -112,8 +112,8 @@ img{
 
 main{
     
-    height: 100vh;
-    overflow-x: hidden;
+    height: 100%;
+    
 }
 section{
     width: 90%;
@@ -202,12 +202,11 @@ p{
 
 @media (max-width: 930px) {
     .navbar_link{
-        position: fixed;
+        position: absolute;
         align-items: center;
         right: 0;
         top: 0;
         background-color: #fafafa;
-       
         box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0,20%);
         flex-direction: column;
         padding: 10rem 0.5rem;
@@ -238,6 +237,7 @@ p{
         height: 100vh;
         width: 20rem;
         line-height: 5;
+       
         
         
         
@@ -245,6 +245,7 @@ p{
 
     .close{
         display: none;
+        position: fixed;
         
     }
 
